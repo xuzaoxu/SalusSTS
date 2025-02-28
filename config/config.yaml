@@ -1,0 +1,36 @@
+fqs: config/fqlist.csv
+
+ChipType: Dual   # Solo, DualUpper, DualLower, Dual
+fstBCzoomed: True # Set True for fstBC prior to 2024-11
+STARref: custom  # human or mouse, rat; custom
+umilength: 10
+PEmode: cut  # normal, cut. Set `dark` on "LibScheme" in <fqlist.csv>.
+BCUMI2pass: True  # Set True to use Salus barcode correction tool over the one from STAR.
+useSTARsort: True  # False for sorting by SAMTOOLS(less Mem and opened files required).
+TissueSegment: True # Use SegmentAnything to extract tissue region. Set False also disable HTML report.
+TissueSegmentBinSize: 100 # For both SegmentAnything and manual. Must exists in pseudo_cell.binsize
+HEtifPath: ./  # For multiple samples, store the corresponding images named as {sampleID}.tif in {HEtifPath}. The program recognizes them automatically.
+TissueSegmentHE: False  # manual tissue region extraction step 1. Will read {HEtifPath}/{sampleID}.tif
+ReadManualHEmask: False # step 4, read mask file results/ManualHEmask/{sampleID}_{chipZone}.mask.tif
+
+ref:
+  custom:
+    star: /share/data/reference/bee/Amel_HAv31n_sjdbOverhang150
+    mtgenes: /dev/null
+
+sndRNA:
+  EnableSoloVelocyto: yes    # Required for cellbin results.
+  soloStrandFlag: 1 # 1 = Forward, 2 = Reverse, 3 = Unstranded
+
+pseudo_cell:
+  # binsize=400 # 100um x 100um
+  # binsize=40  # 10um x 10 um
+  # binsize=100 # 25um x 25 um, please keep bin100
+  binsize:
+    - 400
+    - 100
+    - 40
+
+withR: False  # Require R packages
+withClean: 0   # 0 = Auto, 1 = True, -1 = False. Please set to -1 if you are planning to use manual tissue region extraction
+mergeCleanFQ: False
