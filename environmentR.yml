@@ -1,0 +1,31 @@
+name: salus
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - conda-forge::rpy2
+  - conda-forge::r-dplyr
+  - conda-forge::r-ggplot2
+  - conda-forge::r-matrix
+  - conda-forge::r-seurat[version='<5']
+  - conda-forge::r-seuratobject[version<'5.1']
+  - tiledb::r-tiledbsoma
+  - conda-forge::r-pheatmap
+  - conda-forge::r-magrittr
+  - conda-forge::r-littler
+  - conda-forge::r-tidyverse
+  - bioconda::bioconductor-aucell
+  - bioconda::bioconductor-singler
+  - bioconda::bioconductor-celldex
+  - bioconda::bioconductor-scran
+  - bioconda::bioconductor-genomeinfodbdata
+  - conda-forge::r-tictoc
+  - conda-forge::r-ggsci
+  - conda-forge::r-mapplots
+  - conda-forge::r-rlist
+  - conda-forge::r-mclust
+  - conda-forge::r-optparse
+  - conda-forge::r-r.utils
+  - conda-forge::r-irkernel
+
