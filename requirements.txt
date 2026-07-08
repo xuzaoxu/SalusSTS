@@ -1,0 +1,88 @@
+# Python dependencies for SalusSTS (pip-installable only)
+# Core scientific stack
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+scikit-learn>=1.3
+scikit-misc>=0.3
+statsmodels>=0.14
+numba>=0.58
+
+# Bioinformatics utilities (PyPI mirrors)
+pysam>=0.22
+pyfastx>=2.1
+mappy>=2.24
+htseq>=2.0
+
+# Imaging & spatial analysis
+opencv-python-headless>=4.9
+Pillow>=10.0
+tifffile>=2024.1
+scikit-image>=0.22
+dask[array]>=2024.1
+dask-image>=2024.1
+
+# Deep learning & segmentation
+torch>=2.1
+torchvision>=0.16
+torchmetrics>=1.3
+lightning>=2.1
+segment-anything>=1.0
+cellpose>=3.0
+
+# Graph / network analysis
+networkx>=3.2
+python-igraph>=0.10
+leidenalg>=0.10
+pygraphviz>=1.11
+python-graphblas>=2024.1
+python-suitesparse-graphblas>=8.0
+
+# Visualization
+matplotlib>=3.8
+matplotlib-base>=3.8
+mplcairo>=0.6
+mpl-scatter-density>=0.8
+pyqtgraph>=0.13
+plotly>=5.18
+seaborn>=0.13
+kaleido>=0.2
+python-kaleido>=0.2
+
+# Single-cell / spatial transcriptomics
+scanpy>=1.9.8
+squidpy>=1.4
+anndata>=0.10
+loompy>=3.0
+pyarrow<16
+fast_matrix_market>=1.8
+
+# Workflow & utilities
+snakemake>=7.17.0
+snakemake-wrapper-utils>=0.6.2
+click>=8.1
+cython>=3.0
+cykhash>=1.3
+pyyaml>=6.0
+tqdm>=4.66
+natsort>=8.4
+prettytable>=3.10
+recordclass>=0.21
+stopit>=1.1
+superqt>=0.6
+weasyprint>=60.0
+minify-html>=0.15
+markdown>=3.5
+pymdown-extensions>=10.0
+xopen>=1.9
+python-isal>=1.5
+python-zlib-ng>=0.8
+
+# Jupyter / interactive
+ipykernel>=6.28
+qtpy>=2.4
+
+# Custom / internal packages (require private channels)
+# salusts>=2.80
+# scselpy>=0.1
+# stagate_pyg>=0.1
