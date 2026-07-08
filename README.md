@@ -298,6 +298,8 @@ This pipeline relies on the following third-party software:
 - **Segment Anything Model (SAM)** (Kirillov et al., arXiv:2304.02643; 2023) — tissue region segmentation — MIT License — GitHub - facebookresearch/segment-anything: The repository provides code for running inference with   
 - **SeqKit** (Shen et al., *PLoS ONE* 11:e0163962; 2016) — FASTQ/FASTA utilities — MIT License — GitHub - shenwei356/seqkit: A cross-platform and ultrafast toolkit for FASTA/Q file manipulation  
 - **OpenCV**, **NumPy**, **SciPy**, **Pillow**, **PyTorch** — standard open-source libraries (BSD / MIT)
+- **samtools** (Li et al., *Bioinformatics* 2009) — BAM/CRAM manipulation — The MIT/Expat License
+- **Scanpy** (Wolf et al., *Genome Biology* 2018) — BSD 3-Clause License
 
 All third-party tools are installed via Conda (`environmentGPU.yml`, `environmentR.yml`). Original license texts and copyright notices are retained where applicable. Python package versions are listed in `requirements.txt`.
 
