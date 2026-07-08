@@ -286,3 +286,5 @@ withClean: 0  # 0 = Auto, 1 = True, -1 = False
 ```
 
 See [Results.md](Results.md) for details.
+
+Salus Spatial Workflow is licensed under the MIT License.
