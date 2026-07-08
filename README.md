@@ -288,3 +288,17 @@ withClean: 0  # 0 = Auto, 1 = True, -1 = False
 See [Results.md](Results.md) for details.
 
 Salus Spatial Workflow is licensed under the MIT License.
+
+## Third-Party Dependencies
+
+This pipeline relies on the following third-party software:
+
+- **Snakemake** (Köster & Rahmann, *Bioinformatics* 2012) — workflow management  — MIT License
+- **STAR** (Dobin et al., *Bioinformatics* 2013) — RNA-seq alignment  — GLP-3.0 License
+- **Segment Anything Model (SAM)** (Kirillov et al., arXiv:2304.02643; 2023) — tissue region segmentation — MIT License — GitHub - facebookresearch/segment-anything: The repository provides code for running inference with   
+- **SeqKit** (Shen et al., *PLoS ONE* 11:e0163962; 2016) — FASTQ/FASTA utilities — MIT License — GitHub - shenwei356/seqkit: A cross-platform and ultrafast toolkit for FASTA/Q file manipulation  
+- **OpenCV**, **NumPy**, **SciPy**, **Pillow**, **PyTorch** — standard open-source libraries (BSD / MIT)
+
+All third-party tools are installed via Conda (`environmentGPU.yml`, `environmentR.yml`). Original license texts and copyright notices are retained where applicable. Python package versions are listed in `requirements.txt`.
+
+Salus Spatial Workflow is licensed under the MIT License.
